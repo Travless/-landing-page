@@ -1,0 +1,148 @@
+body {
+    /* display: flex; */
+}
+
+a:link {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f2937;
+    color: #F9FAF8;
+    padding: 16px;
+}
+
+.header-title {
+    padding-left: 32px;
+    margin-left: 32px;
+    font-weight: bolder;
+    font-size: 30px;
+    align-items: center;
+}
+
+.header-links {
+    padding-right: 32px;
+    margin-right: 32px;
+    align-items: center;
+}
+
+.header-bottom {
+    display: flex;
+    flex-direction: row;
+    padding: 32px;
+    margin: 32px;
+    justify-content: space-between;
+}
+
+.header-info {
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.heading-one {
+    font-size: 48px;
+    font-weight:bolder;
+    /* color: #F9FAF8; */
+}
+
+.paragraph-one {
+    font-size: 18px;
+}
+
+.header-image {
+    min-width: 0;
+    max-width: 70%;
+    width: 100%;
+    height: auto;
+}
+
+.heading-one, .paragraph-one {
+    margin-bottom: 10px;
+}
+
+.sign-up-button, .cta-signup {
+    border: 2px solid #eee;
+    border-radius: 8px;
+    background: #eee;
+    padding: 8px 16px 8px 16px;
+    background-color: #3882F6;
+    color: #eee;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 16px;
+}
+
+.image-roll {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.images img {
+    width:  200px;
+    height: 200px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px #1f2937 solid;
+    padding: 100px;
+    background-color: #E5E7EB;
+    gap: 50px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.author {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    border: 5px solid;
+    background-color: #3882F6;
+    padding: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.cta-box {
+    justify-content: space-between;
+}
+
+/* .cta-text {
+    flex-wrap: wrap;
+} */
+
+.footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #eee;
+    justify-content: center;
+}
