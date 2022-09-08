@@ -1,10 +1,14 @@
+html {
+    background-color: #1f2937;
+}
+
 body {
     /* display: flex; */
 }
 
 a:link {
     text-decoration: none;
-    color: #F9FAF8;
+    color: black;
 }
 
 ul {
@@ -18,8 +22,8 @@ ul {
 .header-top {
     display: flex;
     justify-content: space-between;
-    background-color: #1f2937;
-    color: #F9FAF8;
+    background-color: #fcff69;
+    color: black;
     padding: 16px;
 }
 
@@ -53,11 +57,12 @@ ul {
 .heading-one {
     font-size: 48px;
     font-weight:bolder;
-    /* color: #F9FAF8; */
+    color: #fcff69;
 }
 
 .paragraph-one {
     font-size: 18px;
+    color: #fcff69;
 }
 
 .header-image {
@@ -71,7 +76,7 @@ ul {
     margin-bottom: 10px;
 }
 
-.sign-up-button, .cta-signup {
+.sign-up-button {
     border: 2px solid #eee;
     border-radius: 8px;
     background: #eee;
@@ -79,8 +84,12 @@ ul {
     background-color: #3882F6;
     color: #eee;
     flex-grow: 0;
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
     flex-basis: 16px;
+}
+
+.image-text {
+    text-align: center;
 }
 
 .image-roll {
@@ -94,6 +103,13 @@ ul {
     height: 200px;
 }
 
+.image-one, .image-two, .image-three, .image-four {
+    align-items: center;
+    border: 5px solid;
+    text-align: center;
+    margin: 10px;
+}
+
 .quote {
     display: flex;
     flex-direction: column;
@@ -102,7 +118,13 @@ ul {
     border: 5px #1f2937 solid;
     padding: 100px;
     background-color: #E5E7EB;
+    /* background-image: url("https://previews.123rf.com/images/ensup/ensup1611/ensup161100026/65982624-rusted-metal-texture.jpg") */
     gap: 50px;
+    /* width: 90%; */
+}
+
+.quote:after {
+
 }
 
 .quote-text {
@@ -118,7 +140,7 @@ ul {
 
 .cta {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 150px;
     border: 5px solid;
@@ -126,15 +148,54 @@ ul {
     padding: 40px;
     margin-left: 200px;
     margin-right: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    gap: 30px;
 }
 
 .cta-box {
-    justify-content: space-between;
+    flex-direction: row;
 }
 
-/* .cta-text {
-    flex-wrap: wrap;
-} */
+ .cta-box button {
+    border: 2px solid #eee;
+    border-radius: 8px;
+    background: #eee;
+    padding: 8px 16px 8px 16px;
+    background-color: #3882F6;
+    color: #eee;
+    flex-grow: 0;
+    /* flex-shrink: 1; */
+    flex-basis: 16px;
+}
+
+.cta-signup {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    background: #eee;
+    padding: 8px 16px 8px 16px;
+    background-color: #3882F6;
+    color: #eee;
+    flex-grow: 0;
+}
+
+.cta-text {
+    display: flex;
+    gap: 5px;
+}
+
+.cta-heading {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.cta-para {
+    font-size: 20px;
+}
 
 .footer {
     display: flex;
