@@ -58,10 +58,11 @@ ul {
     font-size: 48px;
     font-weight:bolder;
     color: #fcff69;
+    /* text-shadow: 50px black; */
 }
 
-.paragraph-one {
-    font-size: 18px;
+.paragraph-one, .paragraph-two, .paragraph-three {
+    font-size: 25px;
     color: #fcff69;
 }
 
@@ -72,20 +73,33 @@ ul {
     height: auto;
 }
 
-.heading-one, .paragraph-one {
+.heading-one, .paragraph-one, .paragraph-two, .paragraph-three {
     margin-bottom: 10px;
 }
 
 .sign-up-button {
-    border: 2px solid #eee;
+    border: 2px solid #1F2937;
     border-radius: 8px;
     background: #eee;
     padding: 8px 16px 8px 16px;
-    background-color: #3882F6;
-    color: #eee;
+    background-color: #fcff69;
+    color: #1F2937;
     flex-grow: 0;
     /* flex-shrink: 1; */
     flex-basis: 16px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.image-title {
+    color: #fcff69;
+    font-weight: bolder;
+    font-size: 40px;
 }
 
 .image-text {
@@ -96,24 +110,27 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 30px;
 }
 
 .images img {
-    width:  200px;
+    width:  400px;
     height: 200px;
 }
 
 .image-one, .image-two, .image-three, .image-four {
     align-items: center;
-    border: 5px solid;
+    /* border: 5px solid; */
     text-align: center;
     margin: 10px;
+    color:#fcff69;
+    /* box-shadow: 4px white; */
 }
 
-.quote {
+.quotes {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-around;
     align-items: center;
     border: 5px #1f2937 solid;
     padding: 100px;
@@ -123,17 +140,13 @@ ul {
     /* width: 90%; */
 }
 
-.quote:after {
-
-}
-
-.quote-text {
+.quote-text-one,.quote-text-two, .quote-text-three {
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
 }
 
-.author {
+.author-one, .author-two, .author-three {
     font-size: 36px;
     font-weight: bold;
 }
@@ -144,7 +157,7 @@ ul {
     align-items: center;
     margin-bottom: 150px;
     border: 5px solid;
-    background-color: #3882F6;
+    background-color: #fcff69;
     padding: 40px;
     margin-left: 200px;
     margin-right: 200px;
@@ -162,7 +175,7 @@ ul {
     border-radius: 8px;
     background: #eee;
     padding: 8px 16px 8px 16px;
-    background-color: #3882F6;
+    background-color: #fcff69;
     color: #eee;
     flex-grow: 0;
     /* flex-shrink: 1; */
@@ -174,12 +187,12 @@ ul {
     padding-right: 20px;
     font-size: 20px;
     text-align: center;
-    border: 2px solid #eee;
+    border: 2px solid #1F2937;
     border-radius: 8px;
     background: #eee;
     padding: 8px 16px 8px 16px;
-    background-color: #3882F6;
-    color: #eee;
+    background-color: #fcff69;
+    color: #1F2937;
     flex-grow: 0;
 }
 
